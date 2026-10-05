@@ -1,9 +1,11 @@
 #include <stdio.h>
-
-int main(void) {
-int marks[5]={85,86,87,88,89};
-    for( int i=0;i<5;i++){
-    printf("%d\n",marks[i]);
+int main(void)
+{
+    int marks[4];
+    printf("Enter Your Marks");
+    for(int i =0;i<=5;i++){
+      scanf("%d",&marks[i]);
     }
+   printf("%d\n",marks[3]);
     return 0;
 }
