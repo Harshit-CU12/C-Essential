@@ -1,10 +1,11 @@
-int sum(int a,int b);
+#include<stdio.h>
+int sum(int a,int b);//Function declaration
 
 int main(){
     int a,b;
     
-    printf("Entter first number :");
-    scanf("%d",&a);
+printf("Entter first number :");//Function call
+scanf("%d",&a);
     printf("Enter Second Number :");
     scanf("%d",&b);
 
@@ -13,6 +14,6 @@ int main(){
     return 0;
 }
 
-int sum (int x,int y){
+int sum (int x,int y){// Function defining
     return x+y;
 }
