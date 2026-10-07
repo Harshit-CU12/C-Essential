@@ -1,18 +1,13 @@
-int sum(int a,int b);
-
+#include<stdio.h>
+//Print factorial of n numbers
 int main(){
-    int a,b;
-    
-    printf("Entter first number :");
-    scanf("%d",&a);
-    printf("Enter Second Number :");
-    scanf("%d",&b);
-
-    int S=sum(a,b);
-    printf("Sum is %d:",S);
+    int n;
+    printf("Enter thr Number:");
+    scanf("%d",n);
+    int fact==1;
+    for (int i=1;i<=n;i++){
+    fact=fact*i;
+    }
+    printf(" Factorial of N: %d",fact);
     return 0;
-}
-
-int sum (int x,int y){
-    return x+y;
 }
