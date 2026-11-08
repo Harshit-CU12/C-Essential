@@ -1,22 +1,15 @@
+//Write a fuction to calculate percentage of a student from Marks in Science,maths, sanskrit
 #include<stdio.h>
+ int calcPercentage (int Science,int maths,int sanskrit);
 
-int main(){
-    char str[100];
-    int count=0;
-    printf("Enter a string:");
-    scanf("%99s",str);
-
-    for(int i=0;str[i]!='\0';i++){
-        if(str[i]=='a'||str[i]=='e'||
-            str[i]=='i'||str[i]=='o'||
-            str[i]=='u'||str[i]=='E'||
-            str[i]=='A'||str[i]=='I'||
-            str[i]=='O'||str[i]=='U')
-            {
-                count++;
-            }
-    }
-    printf("Total vowels=%d",count);
-
+ int main(){
+    int Science=89;
+    int maths=98;
+    int sanskrit=95;
+    printf("Percentage is :%d",calcPercentage (Science,maths,sanskrit));
     return 0;
-}
+ }
+
+ int calcPercentage(int Science,int maths, int sanskrit){
+    return((Science + maths + sanskrit)/3);
+ }
