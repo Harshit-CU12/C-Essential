@@ -1,15 +1,9 @@
-//Write a fuction to calculate percentage of a student from Marks in Science,maths, sanskrit
+//pointer
 #include<stdio.h>
- int calcPercentage (int Science,int maths,int sanskrit);
-
- int main(){
-    int Science=89;
-    int maths=98;
-    int sanskrit=95;
-    printf("Percentage is :%d",calcPercentage (Science,maths,sanskrit));
+int main(){
+    int age=17;
+    int *ptr=&age;
+    int _age = *ptr;
+    printf("%d",_age);
     return 0;
- }
-
- int calcPercentage(int Science,int maths, int sanskrit){
-    return((Science + maths + sanskrit)/3);
- }
+}
