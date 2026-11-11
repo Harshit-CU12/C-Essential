@@ -1,17 +1,14 @@
-//Write a function to calculate the sum , product & average of 2 numbers. printf that average in the main function
 #include<stdio.h>
-void dowork(int a , int b, int *sum, int *prod,int *avg);
-
 int main(){
-    int a=2, b=5;
-    int sum,prod,avg;
-    dowork(a,b,&sum, &prod,&avg);
-    printf("Sum=%d,Product=%d,Average=%d\n",sum,prod,avg);
-    return 0;
+    float price[3];
+    printf("Enter 3 prices");
+    scanf("%f",price[0]);
+    scanf("%f",price[1]);
+    scanf("%f",price[2]);
 
-}
-void dowork(int a , int b, int *sum, int *prod,int *avg){
-    *sum=a+b;
-    *prod=a*b;
-    *avg=a+b/2;
+    printf("Total price 1",price[0]+(0.18*price[0]));
+    printf("Total price 2",price[1]+(0.18*price[1]));
+    printf("Total price 3",price[2]+(0.18*price[2]));
+
+    return 0;
 }
